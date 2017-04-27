@@ -10,6 +10,11 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+#Porque a mi me apetece para "Entorno"
+*.mp3
+*.mp4
+*.wav
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
