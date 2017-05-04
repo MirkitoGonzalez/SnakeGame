@@ -21,7 +21,6 @@ namespace SnakeGame
             }
             direction = Direction.right;
             DrawSnake();
-            
         }
         public static void Right()
         {
@@ -94,7 +93,7 @@ namespace SnakeGame
             switch (direction)
             {
                 case Direction.right:
-                    if (snake[snake.Count-1].X>=78)
+                    if (snake[snake.Count - 1].X >= 78)
                     {
                         return false;
                     }
@@ -108,7 +107,7 @@ namespace SnakeGame
                     Left();
                     break;
                 case Direction.up:
-                    if (snake[snake.Count - 1].Y<= 1)
+                    if (snake[snake.Count - 1].Y <= 1)
                     {
                         return false;
                     }

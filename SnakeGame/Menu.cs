@@ -10,6 +10,7 @@ namespace SnakeGame
     {
         public static void RunMenu()
         {
+            // Menu de 3 posiciones , no permite nada mas , distintos colores para diferente aspecto
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.White;
             Console.SetCursorPosition(32, 8);
@@ -22,7 +23,11 @@ namespace SnakeGame
             Console.Write("3-Exit");
             Console.CursorVisible = false;
             Console.ForegroundColor = ConsoleColor.White;
+
+            // Unica variable
             var key=Console.ReadKey();
+
+            // Hacemos el Swtch de 3 opciones
             switch (key.Key)
             {
                 case ConsoleKey.D1:

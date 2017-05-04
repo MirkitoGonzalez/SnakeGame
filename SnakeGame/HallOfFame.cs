@@ -8,6 +8,7 @@ namespace SnakeGame
 {
     static class HallOfFame
     {
+        // Aqui definimos los Scores y les ordenamos
         private static string file = "HallOfFame.txt";
         private static List<HallOfFameEntry> entries = new List<HallOfFameEntry>();
         private static void GetHallOfFame()
@@ -33,6 +34,7 @@ namespace SnakeGame
         }
         public static bool CheckForFameResult(int result)
         {
+            // Como bien s eindica simplemente hacemos una revision  de la puntuacion y vemos si funciona correctamente
             GetHallOfFame();
             if (result==0)
             {
@@ -56,6 +58,7 @@ namespace SnakeGame
         }
         public static void EnterHallOfFame(HallOfFameEntry entry)
         {
+            //metodo para introducir en el HALLFAME
             entries.Add(entry);
             if (entries.Count>10)
             {
@@ -75,6 +78,7 @@ namespace SnakeGame
         }
         private static void SaveHallOfFame()
         {
+            //creamos el StreamWr y luego posteriormente lo cerraremos para evitar conflictos
             StreamWriter write = new StreamWriter(file,false);
             using (write)
             {
@@ -86,6 +90,7 @@ namespace SnakeGame
         }
         public static void Show()
         {
+            // simplemente mostramos las entradas de las puntuaciones
             GetHallOfFame();
             var list = from entry in entries
                        orderby entry.Score descending

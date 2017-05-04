@@ -68,7 +68,7 @@
     <StartupObject>SnakeGame.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>wi0126-64.ico</ApplicationIcon>
+    <ApplicationIcon>Snakebb.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -131,6 +131,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Snakebb.ico" />
     <Content Include="wi0126-64.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

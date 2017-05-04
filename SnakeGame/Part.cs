@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SnakeGame
 {
     struct Part
-    {
+    { // Definimos las posiciones principales desde donde luego comenzaremos a utilizar y representar
         public int X{get;set;}
         public int Y{get;set;}
     }

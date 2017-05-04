@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace SnakeGame
 {
     static class Logo
+        // Simplemente la clase que representara el logo de nuestra
+        //aplicacion ante el usuario o jugador
     {
         public static void Draw()
         {
@@ -18,7 +20,7 @@ namespace SnakeGame
                                 | | ____    ____ | ||
                                 | ||_   \  /   _|| ||
                                 | |  |   \/   |  | ||
-                                | |  | |\  /| |  | || Mirkito Gonzalez
+                       Mirkito  | |  | |\  /| |  | ||  Gonzalez
                                 | | _| |_\/_| |_ | ||
                                 | ||_____||_____|| ||
                                 | |              | ||
@@ -27,7 +29,7 @@ namespace SnakeGame
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n");
-            Console.WriteLine(@"     
+            Console.WriteLine(@"
  /$$$$$$$                                                      /$$              
 | $$__  $$                                                    | $$              
 | $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$$
